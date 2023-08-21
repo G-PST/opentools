@@ -1,0 +1,84 @@
+{
+
+    "definitions": {
+
+        "developer": {
+            "properties": {
+                "name": { "type": "string" }
+            }
+        },
+
+        "license": {
+            "properties": {
+                "name": { "type": "string" }
+            }
+        },
+
+        "language": {
+            "properties": {
+                "name": { "type": "string" }
+            }
+        },
+
+        "dataformat": {
+            "properties": {
+                "name": { "type": "string" }
+            }
+        },
+
+        "software": {
+            "properties": {
+
+                "name": { "type": "string" },
+
+                "developer": {
+                    "type": "string",
+                    "metadata": { "description": "Value must correspond to a key in /developers" }
+                },
+
+                "license": {
+                    "type": "string",
+                    "metadata": { "description": "Value must correspond to a key in /licenses" }
+                },
+
+                "languages": {
+                    "elements": { "type": "string" },
+                    "metadata": { "description": "Elements must correspond to keys in /languages" }
+                },
+
+                "imports": {
+                    "elements": { "type": "string" },
+                    "metadata": { "description": "Elements must correspond to keys in /dataformats" }
+                },
+
+                "exports": {
+                    "elements": { "type": "string" },
+                    "metadata": { "description": "Elements must correspond to keys in /dataformats" }
+                }
+
+            }
+
+        },
+
+        "category": {
+            "properties": {
+                "name": { "type": "string" },
+                "tools": {
+                    "elements": { "type": "string" },
+                    "metadata": { "description": "Elements must correspond to keys in /tools" }
+                }
+            }
+        }
+
+    },
+
+    "properties": {
+        "categories": { "values": { "ref": "category" } },
+        "developers": { "values": { "ref": "developer" } },
+        "licenses": { "values": { "ref": "license" } },
+        "languages": { "values": { "ref": "language" } },
+        "dataformats": { "values": { "ref": "dataformat" } },
+        "tools": { "values": { "ref": "software" } }
+    }
+
+}
