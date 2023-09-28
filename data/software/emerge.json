@@ -1,0 +1,8 @@
+{
+    "name": "emerge",
+    "description": "Modern DER impact analysis tool.",
+    "organization": "nrel",
+    "language": ["python", "javascript"],
+    "developer": "kapil duwadi",
+    "license": "BSD-3-Clause"
+}

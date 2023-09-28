@@ -1,0 +1,38 @@
+{
+    "description": "Interface for organization.",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string"
+        },
+        "description": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Description"
+        },
+        "url": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Url"
+        }
+    },
+    "required": [
+        "name"
+    ],
+    "title": "Organization",
+    "type": "object"
+}

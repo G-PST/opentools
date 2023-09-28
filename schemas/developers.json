@@ -1,0 +1,38 @@
+{
+    "description": "Interface for developer/contributor.",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string"
+        },
+        "email": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Email"
+        },
+        "organization": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Organization"
+        }
+    },
+    "required": [
+        "name"
+    ],
+    "title": "Developer",
+    "type": "object"
+}
