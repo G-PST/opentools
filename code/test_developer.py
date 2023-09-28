@@ -1,22 +1,18 @@
 """ Module to test developers. """
 # standard imports
 from pathlib import Path
-import json
 from typing import List
 
 # internal imports
 from interface import Developer, Organization
+from util import read_file
 
 
 def test_valid_developers():
     """Test function for developers"""
 
-    data_path = Path("../data/developers")
-    for file in data_path.iterdir():
-        with open(file, "r", encoding="utf-8") as file_pointer:
-            file_content = json.load(file_pointer)
-        dev = Developer.model_validate(file_content)
-
+    for file in Path("../data/developers").iterdir():
+        dev = Developer.model_validate(read_file(file))
         file_name = file.name.replace(file.suffix, "")
 
         # Make sure file name is same as developer name
@@ -31,15 +27,10 @@ def test_valid_organizations_for_developers():
 
     organizatons: List[str] = []
     for file in Path("../data/organizations").iterdir():
-        with open(file, "r", encoding="utf-8") as file_pointer:
-            file_content = json.load(file_pointer)
-        org = Organization.model_validate(file_content)
+        org = Organization.model_validate(read_file(file))
         organizatons.append(org.name)
 
     for file in Path("../data/developers").iterdir():
-        with open(file, "r", encoding="utf-8") as file_pointer:
-            file_content = json.load(file_pointer)
-
-        dev = Developer.model_validate(file_content)
+        dev = Developer.model_validate(read_file(file))
         if dev.organization is not None:
             assert dev.organization in organizatons
