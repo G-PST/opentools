@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: use the data validator
-        uses: g-pst/opentools-validation@v1.1.0
+        uses: g-pst/opentools-validation@develop
         with:
-          datapath: "data"
+          datapath: "."
 
     # - name: Checkout code
     #   uses: actions/checkout@v2
