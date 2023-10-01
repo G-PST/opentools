@@ -1,29 +1,30 @@
-name: Run pytest
+name: Run checks on the data
 
-on:
-  push:
-    branches:
-      - '*'  # Change this to your default branch if it's not 'main'
+on: [push, pull_request]
 
 jobs:
   test:
-    name: Run pytest
+    name: Run tests on data
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: use the data validator
+        uses: actions/opentools-validation@v1.0.0
+        with:
+          datapath: "data"
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.11  # Specify the Python version you want to use (e.g., 3.8, 3.9)
+    # - name: Checkout code
+    #   uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: |
-        pip install -r ./code/requirements.txt
+    # - name: Set up Python
+    #   uses: actions/setup-python@v2
+    #   with:
+    #     python-version: 3.11  # Specify the Python version you want to use (e.g., 3.8, 3.9)
 
-    - name: Run pytest
-      run: |
-        cd code
-        pytest
+    # - name: Install dependencies
+    #   run: |
+    #     pip install -r ./code/requirements.txt
+
+    # - name: Run pytest
+    #   run: |
+    #     cd code
+    #     pytest
