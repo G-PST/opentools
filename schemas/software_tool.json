@@ -1,0 +1,71 @@
+{
+    "description": "Interface for software tool. ",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string"
+        },
+        "language": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            ],
+            "title": "Language"
+        },
+        "developer": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            ],
+            "title": "Developer"
+        },
+        "license": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            ],
+            "title": "License"
+        },
+        "description": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Description"
+        }
+    },
+    "required": [
+        "name",
+        "language",
+        "developer",
+        "license"
+    ],
+    "title": "SoftwareTool",
+    "type": "object"
+}

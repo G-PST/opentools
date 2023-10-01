@@ -1,0 +1,26 @@
+{
+    "description": "Interface for programming language.",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string"
+        },
+        "description": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Description"
+        }
+    },
+    "required": [
+        "name"
+    ],
+    "title": "ProgrammingLanguage",
+    "type": "object"
+}
