@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: use the data validator
-        uses: opentools-validation@v1.0.0
+        uses: gpst/opentools-validation@v1.0.0
         with:
           datapath: "data"
 
