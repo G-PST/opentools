@@ -8,23 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: use the data validator
+        id: datavalidator
         uses: g-pst/opentools-validation@develop
         with:
-          datapath: "."
-
-    # - name: Checkout code
-    #   uses: actions/checkout@v2
-
-    # - name: Set up Python
-    #   uses: actions/setup-python@v2
-    #   with:
-    #     python-version: 3.11  # Specify the Python version you want to use (e.g., 3.8, 3.9)
-
-    # - name: Install dependencies
-    #   run: |
-    #     pip install -r ./code/requirements.txt
-
-    # - name: Run pytest
-    #   run: |
-    #     cd code
-    #     pytest
+          datapath: "data"
+      - name: Check outputs and modified files
+        run: |
+          test "${{ steps.datavalidator.outputs.exitcode }}" == "0"
