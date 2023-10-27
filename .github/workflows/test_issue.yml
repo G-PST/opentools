@@ -1,0 +1,26 @@
+name: Handle file uploaded in issue 
+
+on: 
+  issues:
+    types: [opened, edited]
+
+jobs:
+  process_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - run: |
+          echo "Issue Number: ${{ github.event.issue.number }}"
+          echo "Issue Title: ${{ github.event.issue.title }}"
+          echo "Issue URL: ${{ github.event.issue.url }}"
+      
+      - name: Access Issue files
+        uses: g-pst/opentools-validation@feature_issue_handling
+        with:
+          issue_number: "${{ github.event.issue.number }}"
+          issue_title: "${{ github.event.issue.title }}"
+          issue_url: "${{ github.event.issue.url }}"
+          token: "${{ secrets.GITHUB_TOKEN }}"
