@@ -9,11 +9,6 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v4
-      - name: use the data validator
+      - name: Build the site
         id: datavalidator
-        uses: g-pst/opentools-validation@v1.3.0
-        with:
-          datapath: "data"
-      - name: Check outputs and modified files
-        run: |
-          test "${{ steps.datavalidator.outputs.exitcode }}" == "0"
+        uses: g-pst/opentools-builder@v2
