@@ -1,3 +1,5 @@
 {
-    "name": "JavaScript"
+    "name": "JavaScript",
+    "url": "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
+    "licenses": ["bsd-3-clause"]
 }
