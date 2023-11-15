@@ -1,51 +1,37 @@
 {
-    "description": "Interface for software tool. ",
+    "description": " Interface for software tool. ",
     "properties": {
         "name": {
             "title": "Name",
             "type": "string"
         },
-        "language": {
-            "anyOf": [
-                {
-                    "type": "string"
-                },
-                {
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": "array"
-                }
-            ],
-            "title": "Language"
+        "categories": {
+            "items": {
+                "type": "string"
+            },
+            "title": "Categories",
+            "type": "array"
         },
-        "developer": {
-            "anyOf": [
-                {
-                    "type": "string"
-                },
-                {
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": "array"
-                }
-            ],
-            "title": "Developer"
+        "languages": {
+            "items": {
+                "type": "string"
+            },
+            "title": "Languages",
+            "type": "array"
         },
-        "license": {
-            "anyOf": [
-                {
-                    "type": "string"
-                },
-                {
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": "array"
-                }
-            ],
-            "title": "License"
+        "organizations": {
+            "items": {
+                "type": "string"
+            },
+            "title": "Organizations",
+            "type": "array"
+        },
+        "licenses": {
+            "items": {
+                "type": "string"
+            },
+            "title": "Licenses",
+            "type": "array"
         },
         "description": {
             "anyOf": [
@@ -58,13 +44,50 @@
             ],
             "default": null,
             "title": "Description"
+        },
+        "url_website": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Url Website"
+        },
+        "url_sourcecode": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Url Sourcecode"
+        },
+        "url_docs": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Url Docs"
         }
     },
     "required": [
         "name",
-        "language",
-        "developer",
-        "license"
+        "categories",
+        "languages",
+        "organizations",
+        "licenses"
     ],
     "title": "SoftwareTool",
     "type": "object"

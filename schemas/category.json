@@ -1,20 +1,20 @@
 {
-    "description": "Interface for programming language.",
+    "description": "Interface for tree of software tool categorizations.",
     "properties": {
         "name": {
             "title": "Name",
             "type": "string"
         },
-        "url": {
-            "title": "Url",
-            "type": "string"
-        },
-        "licenses": {
-            "items": {
-                "type": "string"
-            },
-            "title": "Licenses",
-            "type": "array"
+        "parent": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "title": "Parent"
         },
         "description": {
             "anyOf": [
@@ -25,15 +25,14 @@
                     "type": "null"
                 }
             ],
-            "default": null,
             "title": "Description"
         }
     },
     "required": [
         "name",
-        "url",
-        "licenses"
+        "parent",
+        "description"
     ],
-    "title": "ProgrammingLanguage",
+    "title": "ToolCategory",
     "type": "object"
 }
