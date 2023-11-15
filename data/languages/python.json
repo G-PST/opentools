@@ -1,3 +1,5 @@
 {
-    "name": "Python"
+    "name": "Python",
+    "url": "https://www.python.org/",
+    "licenses": ["psf"]
 }

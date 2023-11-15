@@ -1,3 +1,5 @@
 {
-    "name": "Go"
+    "name": "Go",
+    "url": "https://go.dev/",
+    "licenses": ["bsd-3-clause"]
 }
