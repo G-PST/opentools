@@ -1,7 +1,7 @@
 {
     "name": "emerge",
     "description": "Modern DER impact analysis tool.",
-    "categories": [],
+    "categories": ["distribution-hostingcapacity"],
     "organizations": ["nrel"],
     "languages": ["python", "javascript"],
     "licenses": ["bsd-3-clause"]
