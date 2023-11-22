@@ -1,0 +1,18 @@
+name: Build Site
+on: [pull_request]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+
+      - name: Validate data and generate the site
+        uses: g-pst/opentools-builder@v2
+
+      - name: Package the site artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: site
