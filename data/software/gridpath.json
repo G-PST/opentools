@@ -1,0 +1,8 @@
+{
+    "name": "GridPath",
+    "description": "A versatile simulation and optimization platform for power-system planning and operations.",
+    "categories": ["capacity-expansion", "resource-adequacy", "production-cost"],
+    "organizations": ["blue-marble"],
+    "languages": ["python"],
+    "licenses": ["apache2"]
+}

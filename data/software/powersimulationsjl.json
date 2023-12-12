@@ -1,0 +1,8 @@
+{
+    "name": "PowerSimulations.jl",
+    "description": "PowerSimulations.jl is a Julia package for power system modeling and simulation of Power Systems operations.",
+    "categories": ["production-cost"],
+    "organizations": ["nrel"],
+    "languages": ["julia"],
+    "licenses": ["bsd-3-clause"]
+}

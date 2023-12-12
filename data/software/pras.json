@@ -1,0 +1,8 @@
+{
+    "name": "PRAS",
+    "description": "Probabilistic Resource Adequacy Suite",
+    "categories": ["resource-adequacy"],
+    "organizations": ["nrel"],
+    "languages": ["julia"],
+    "licenses": ["mit"]
+}

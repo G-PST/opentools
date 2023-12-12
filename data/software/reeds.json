@@ -1,0 +1,8 @@
+{
+    "name": "ReEDS",
+    "description": "The Regional Energy Deployment System (ReEDS) is NREL's flagship capacity planning model for the power sector. The model simulates the evolution of the bulk power system — generation and transmission — from present day through 2050 or later.",
+    "categories": ["capacity-expansion"],
+    "organizations": ["nrel"],
+    "languages": ["python", "gams"],
+    "licenses": ["gplv3"]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "SpineOpt",
+    "description": "A highly adaptable modelling framework for multi-energy systems",
+    "categories": ["capacity-expansion", "production-cost"],
+    "organizations": ["ku-leuven", "kth", "vtt", "energyreform", "ucd"],
+    "languages": ["julia"],
+    "licenses": ["lgplv3-orlater"]
+}

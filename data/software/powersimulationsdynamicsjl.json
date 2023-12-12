@@ -1,0 +1,8 @@
+{
+    "name": "PowerSimulationsDynamics.jl",
+    "description": "PowerSimulationsDynamics.jl is a Julia package for power system modeling and simulation of Power Systems dynamics.",
+    "categories": ["dynamics"],
+    "organizations": ["nrel"],
+    "languages": ["julia"],
+    "licenses": ["bsd-3-clause"]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Antares",
+    "description": "Power system simulator for quantifying the adequacy or the economic performance of interconnected energy systems",
+    "categories": ["resource-adequacy", "production-cost"],
+    "organizations": ["rte"],
+    "languages": ["cpp"],
+    "licenses": ["gplv3"]
+}
