@@ -1,4 +1,5 @@
 {
+    "additionalProperties": true,
     "description": "Interface for opensource licenses.",
     "properties": {
         "name": {
@@ -6,13 +7,20 @@
             "type": "string"
         },
         "spdx_id": {
-            "title": "Spdx Id",
-            "type": "string"
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "default": null,
+            "title": "Spdx Id"
         }
     },
     "required": [
-        "name",
-        "spdx_id"
+        "name"
     ],
     "title": "Licenses",
     "type": "object"

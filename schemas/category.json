@@ -1,4 +1,5 @@
 {
+    "additionalProperties": true,
     "description": "Interface for tree of software tool categorizations.",
     "properties": {
         "name": {
@@ -14,6 +15,7 @@
                     "type": "null"
                 }
             ],
+            "default": null,
             "title": "Parent"
         },
         "description": {
@@ -25,13 +27,12 @@
                     "type": "null"
                 }
             ],
+            "default": null,
             "title": "Description"
         }
     },
     "required": [
-        "name",
-        "parent",
-        "description"
+        "name"
     ],
     "title": "ToolCategory",
     "type": "object"
