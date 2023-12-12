@@ -1,8 +1,7 @@
-name: Build Site
+name: Validate Data
 on:
   pull_request:
     branches: [ "main" ]
-  workflow_call:
 
 jobs:
   test-build:
@@ -12,10 +11,5 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v4
 
-      - name: Validate data and generate the site
+      - name: Validate data and test generating the site
         uses: g-pst/opentools-builder@v2
-
-      - name: Package the site artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: site

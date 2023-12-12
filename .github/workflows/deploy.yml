@@ -1,4 +1,4 @@
-name: Deploy Site
+name: Build and Deploy Site
 
 on:
   push:
@@ -12,7 +12,29 @@ concurrency:
 jobs:
 
   build:
-    uses: ./.github/workflows/build.yml
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+
+      - name: Validate data and generate the site
+        uses: g-pst/opentools-builder@v2
+        with:
+          sitepath: site
+
+      - name: Build the input form
+        uses: g-pst/opentools-form@gs/action-test
+        with:
+          formpath: site/opentools-form
+          baseurl: /opentools-form # TODO: not supported yet
+
+      - name: Package the site artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: site
 
   deploy:
 
