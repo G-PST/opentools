@@ -18,7 +18,7 @@ jobs:
           echo "Issue URL: ${{ github.event.issue.url }}"
       
       - name: Access Issue files
-        uses: g-pst/opentools-validation@feature_issue_handling
+        uses: g-pst/opentools-issueprocessor@develop
         with:
           issue_number: "${{ github.event.issue.number }}"
           issue_title: "${{ github.event.issue.title }}"
