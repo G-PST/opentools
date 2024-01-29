@@ -18,27 +18,20 @@ jobs:
           echo "Issue URL: ${{ github.event.issue.url }}"
       
       - name: Access Issue files
-        uses: g-pst/opentools-issueprocessor@develop
+        uses: g-pst/opentools-issueprocessor@
+        id: issue_branch
         with:
           issue_number: "${{ github.event.issue.number }}"
           issue_title: "${{ github.event.issue.title }}"
           issue_url: "${{ github.event.issue.url }}"
           token: "${{ secrets.GITHUB_TOKEN }}"
           datapath: data
-  
-  create_pull_request:
-    needs: process_issue
-    runs-on: ubuntu-latest
-    if: ${{ needs.process_issue.outputs.branch }}
-    
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2
       
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
+        if: steps.issue_branch.outputs.branch
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ needs.process_issue.outputs.branch }}
+          branch: ${{ steps.issue_branch.outputs.branch }}
           title: 'Automated Pull Request'
           body: 'This pull request was automatically created.'
