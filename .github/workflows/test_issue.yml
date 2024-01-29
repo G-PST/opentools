@@ -24,3 +24,4 @@ jobs:
           issue_title: "${{ github.event.issue.title }}"
           issue_url: "${{ github.event.issue.url }}"
           token: "${{ secrets.GITHUB_TOKEN }}"
+          datapath: data
