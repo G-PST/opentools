@@ -18,7 +18,7 @@ jobs:
           echo "Issue URL: ${{ github.event.issue.url }}"
       
       - name: Access Issue files
-        uses: g-pst/opentools-issueprocessor@
+        uses: g-pst/opentools-issueprocessor@develop
         id: issue_branch
         with:
           issue_number: "${{ github.event.issue.number }}"
