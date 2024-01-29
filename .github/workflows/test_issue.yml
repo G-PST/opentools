@@ -25,3 +25,20 @@ jobs:
           issue_url: "${{ github.event.issue.url }}"
           token: "${{ secrets.GITHUB_TOKEN }}"
           datapath: data
+  
+  create_pull_request:
+    needs: process_issue
+    runs-on: ubuntu-latest
+    if: ${{ needs.process_issue.outputs.branch }}
+    
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ needs.process_issue.outputs.branch }}
+          title: 'Automated Pull Request'
+          body: 'This pull request was automatically created.'
