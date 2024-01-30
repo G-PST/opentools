@@ -1,0 +1,1 @@
+{"name": "ERAD", "categories": [], "languages": ["Python"], "organizations": ["NREL"], "licenses": ["BSD 3-Clause License"], "description": "Graph based python library for computing resilience metrics for power distribution systems.", "url_website": "", "url_sourcecode": "https://github.com/NREL/erad", "url_docs": "https://nrel.github.io/erad/"}
