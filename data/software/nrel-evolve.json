@@ -1,0 +1,18 @@
+{
+    "name": "EVOLVE",
+    "categories": [],
+    "languages": [
+        "Python",
+        "JavaScript"
+    ],
+    "organizations": [
+        "NREL"
+    ],
+    "licenses": [
+        "BSD 3-Clause License"
+    ],
+    "description": "Modern UI tool for modeling solar, energy storage and electric vehicle providing insight regarding how it impact load profile.",
+    "url_website": "",
+    "url_sourcecode": "https://github.com/nrel/evolve",
+    "url_docs": "https://nrel.github.io/EVOLVE/"
+}
