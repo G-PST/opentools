@@ -4,5 +4,5 @@
     "categories": ["resource-adequacy"],
     "organizations": ["nrel"],
     "languages": ["julia"],
-    "licenses": ["mit-expat"]
+    "licenses": ["mit"]
 }
