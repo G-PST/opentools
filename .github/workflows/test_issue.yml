@@ -26,6 +26,26 @@ jobs:
           issue_url: "${{ github.event.issue.url }}"
           token: "${{ secrets.GITHUB_TOKEN }}"
           datapath: data
+
+      - name: Validate data and test generating the site
+        id: test
+        uses: g-pst/opentools-builder@v3
+        with:
+          outputpath: ${{ env.GITHUB_OUTPUT }}
+
+      - name: Provides error message back to the issue
+        if: ${{ steps.test.outputs.status != 'pass' }}
+        run: gh issue comment create $ISSUE_NUMBER --body-file errormessage.md; exit 1 
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+
+      - name: Provides error message back to the issue
+        if: ${{ steps.test.outputs.status == 'pass' }}
+        run: gh issue comment create $ISSUE_NUMBER --body "Your data is successfully tested."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
       
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
