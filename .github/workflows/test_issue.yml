@@ -35,7 +35,7 @@ jobs:
 
       - name: Provides error message back to the issue
         if: ${{ steps.test.outputs.status != 'pass' }}
-        run: gh issue comment create $ISSUE_NUMBER --body-file errormessage.md; exit 1 
+        run: gh issue comment $ISSUE_NUMBER --body-file errormessage.md; exit 1
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
