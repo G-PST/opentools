@@ -63,6 +63,7 @@ jobs:
         run: gh issue comment $ISSUE_NUMBER --body "Please make update and/or track this PR \#$PR"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
           PR: ${{ steps.pull_request.outputs.pull-request-number }} 
 
       - name: Raise error 
