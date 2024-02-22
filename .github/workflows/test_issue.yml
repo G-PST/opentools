@@ -40,7 +40,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
 
-      - name: Provides error message back to the issue
+      - name: Provides success message back to the issue
         if: ${{ steps.test.outputs.status == 'pass' }}
         run: gh issue comment $ISSUE_NUMBER --body "Your data is successfully tested."
         env:
@@ -49,6 +49,7 @@ jobs:
       
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
+        id: pull_request
         if: steps.issue_branch.outputs.branch
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -56,3 +57,10 @@ jobs:
           title: 'Automated Pull Request'
           base: main
           body: 'This pull request was automatically created.'
+
+      - name: Link pull request back to the issue
+        if: ${{ steps.pull_request.outputs.pull-request-number }}
+        run: gh issue comment $ISSUE_NUMBER --body "Please make update and/or track this PR \#$PR"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ steps.pull_request.outputs.pull-request-number }} 
