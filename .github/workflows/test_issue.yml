@@ -27,6 +27,13 @@ jobs:
           token: "${{ secrets.GITHUB_TOKEN }}"
           datapath: data
 
+      - name: Provides error message
+        if: steps.issue_branch.outputs.errormessage
+        run: gh issue comment $ISSUE_NUMBER --body ${{steps.issue_branch.outputs.errormessage}}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+
       - name: Validate data and test generating the site
         id: test
         uses: g-pst/opentools-builder@v3
