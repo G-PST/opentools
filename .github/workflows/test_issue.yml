@@ -3,6 +3,8 @@ name: Handle file uploaded in issue
 on: 
   issues:
     types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
 
 jobs:
   process_issue:
