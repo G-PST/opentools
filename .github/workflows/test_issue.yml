@@ -39,12 +39,13 @@ jobs:
 
       - name: Validate data and test generating the site
         id: test
+        if: steps.issue_branch.outputs.branch
         uses: g-pst/opentools-builder@v3
         with:
           outputpath: ${{ env.GITHUB_OUTPUT }}
 
       - name: Provides error message back to the issue
-        if: ${{ steps.test.outputs.status != 'pass' }}
+        if: ${{ steps.issue_branch.outputs.branch && steps.test.outputs.status != 'pass' }}
         run: |
           gh issue comment $ISSUE_NUMBER --body-file errormessage.md
           gh issue edit $ISSUE_NUMBER --add-label "data error"
@@ -54,7 +55,7 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
 
       - name: Provides success message back to the issue
-        if: ${{ steps.test.outputs.status == 'pass' }}
+        if: ${{ steps.issue_branch.outputs.branch && steps.test.outputs.status == 'pass' }}
         run: |
           gh issue comment $ISSUE_NUMBER --body "Your data is successfully tested."
           gh issue edit $ISSUE_NUMBER --add-label "data success" --remove-label "data error"
