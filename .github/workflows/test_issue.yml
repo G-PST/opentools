@@ -47,6 +47,7 @@ jobs:
         if: ${{ steps.test.outputs.status != 'pass' }}
         run: |
           gh issue comment $ISSUE_NUMBER --body-file errormessage.md
+          gh issue edit $ISSUE_NUMBER --add-label "data error"
           exit 1
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
