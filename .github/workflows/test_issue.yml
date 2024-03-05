@@ -27,6 +27,16 @@ jobs:
           token: "${{ secrets.GITHUB_TOKEN }}"
           datapath: data
 
+      - name: Provides error message
+        if: steps.issue_branch.outputs.errormessage
+        run: |
+          gh issue comment $ISSUE_NUMBER --body ${{steps.issue_branch.outputs.errormessage}}
+          gh issue edit $ISSUE_NUMBER --add-label "data error"
+          exit 1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+
       - name: Validate data and test generating the site
         id: test
         uses: g-pst/opentools-builder@v3
@@ -35,14 +45,18 @@ jobs:
 
       - name: Provides error message back to the issue
         if: ${{ steps.test.outputs.status != 'pass' }}
-        run: gh issue comment $ISSUE_NUMBER --body-file errormessage.md
+        run: |
+          gh issue comment $ISSUE_NUMBER --body-file errormessage.md
+          exit 1
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
 
       - name: Provides success message back to the issue
         if: ${{ steps.test.outputs.status == 'pass' }}
-        run: gh issue comment $ISSUE_NUMBER --body "Your data is successfully tested."
+        run: |
+          gh issue comment $ISSUE_NUMBER --body "Your data is successfully tested."
+          gh issue edit $ISSUE_NUMBER --add-label "data success" --remove-label "data error"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
@@ -50,7 +64,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         id: pull_request
-        if: steps.issue_branch.outputs.branch
+        if: ${{ steps.issue_branch.outputs.branch && steps.test.outputs.status == 'pass'}}
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ steps.issue_branch.outputs.branch }}
@@ -59,13 +73,11 @@ jobs:
           body: 'This pull request was automatically created.'
 
       - name: Link pull request back to the issue
-        if: ${{ steps.pull_request.outputs.pull-request-number }}
-        run: gh issue comment $ISSUE_NUMBER --body "Please make update and/or track this PR \#$PR"
+        if: ${{  steps.test.outputs.status == 'pass' && steps.pull_request.outputs.pull-request-number }}
+        run: gh issue comment $ISSUE_NUMBER --body "Please make update and/or track this PR. Fixes \#$PR"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           PR: ${{ steps.pull_request.outputs.pull-request-number }} 
 
-      - name: Raise error 
-        if: ${{ steps.test.outputs.status != 'pass' }}
-        run: exit 1
+      
