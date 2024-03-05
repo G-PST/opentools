@@ -19,8 +19,23 @@ jobs:
           echo "Issue Title: ${{ github.event.issue.title }}"
           echo "Issue URL: ${{ github.event.issue.url }}"
       
+
+      - name: Check if data success level already exists
+        id: check_success
+        run: |
+          LABELS=$(gh issue view ${{ github.event.issue.number }} --json labels --jq '.labels[].name')
+          echo "Issue labels: $LABELS"
+          if echo "$LABELS" | grep -q "data success"; then
+            echo "Issue has 'data success' label."
+            echo "::set-output name=has_error::false"
+          else
+            echo "Issue does not have 'data success' label."
+            echo "::set-output name=has_error::true"
+          fi
+
       - name: Access Issue files
         uses: g-pst/opentools-issueprocessor@develop
+        if: steps.check_success.outputs.has_error
         id: issue_branch
         with:
           issue_number: "${{ github.event.issue.number }}"
