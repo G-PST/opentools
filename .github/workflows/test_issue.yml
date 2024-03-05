@@ -29,7 +29,10 @@ jobs:
 
       - name: Provides error message
         if: steps.issue_branch.outputs.errormessage
-        run: gh issue comment $ISSUE_NUMBER --body ${{steps.issue_branch.outputs.errormessage}}
+        run: |
+          gh issue comment $ISSUE_NUMBER --body ${{steps.issue_branch.outputs.errormessage}}
+          gh issue edit $ISSUE_NUMBER --add-label "data error"
+          exit 1
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
@@ -42,21 +45,21 @@ jobs:
 
       - name: Provides error message back to the issue
         if: ${{ steps.test.outputs.status != 'pass' }}
-        run: gh issue comment $ISSUE_NUMBER --body-file errormessage.md
+        run: |
+          gh issue comment $ISSUE_NUMBER --body-file errormessage.md
+          exit 1
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
 
       - name: Provides success message back to the issue
         if: ${{ steps.test.outputs.status == 'pass' }}
-        run: gh issue comment $ISSUE_NUMBER --body "Your data is successfully tested."
+        run: |
+          gh issue comment $ISSUE_NUMBER --body "Your data is successfully tested."
+          gh issue edit $ISSUE_NUMBER --add-label "data success" --remove-label "data error"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-
-      - name: Raise error if test fails
-        if: ${{ steps.test.outputs.status != 'pass' }}
-        run: exit 1
       
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
