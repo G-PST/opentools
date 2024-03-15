@@ -1,0 +1,17 @@
+{
+    "name": "erad",
+    "categories": [],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "nrel"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "Graph based python library for computing resilience metrics for power distribution systems.",
+    "url_website": "https://nrel.github.io/erad/",
+    "url_sourcecode": "https://github.com/NREL/erad",
+    "url_docs": "https://nrel.github.io/erad/"
+}
