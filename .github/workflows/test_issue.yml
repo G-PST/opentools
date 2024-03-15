@@ -89,15 +89,15 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ steps.issue_branch.outputs.branch }}
-          title: 'Automated Pull Request'
+          title: ${{ github.event.issue.title }}
           add-paths: |
             data
           base: main
-          body: 'This pull request was automatically created.'
+          body: 'This pull request was automatically created. Closes #${{github.event.issue.number}}'
 
       - name: Link pull request back to the issue
         if: ${{  steps.test.outputs.status == 'pass' && steps.pull_request.outputs.pull-request-number }}
-        run: gh issue comment $ISSUE_NUMBER --body "Please make update and/or track this PR. Fixes \#$PR"
+        run: gh issue comment $ISSUE_NUMBER --body "Pull request \#$PR is automatically created for you. Please make updates and/or track this PR."
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
