@@ -1,0 +1,21 @@
+{
+    "name": "Dyna\u03c9o",
+    "categories": [
+        "dynamics"
+    ],
+    "languages": [
+        "cpp",
+        "modelica",
+        "python"
+    ],
+    "organizations": [
+        "rte"
+    ],
+    "licenses": [
+        "mpl-2"
+    ],
+    "description": "Dyna\u03c9o is an hybrid C++/Modelica open source suite of simulation tools for power systems. It aims at providing power system stakeholders with a transparent, flexible, interoperable and robust suite of simulation tools that could ease collaboration and cooperation in the power system community.  To achieve this goal, Dyna\u03c9o is based on two mains principles: the use of a high-level modelling language Modelica and a strict separation between the modelling and the solving parts.",
+    "url_website": "http://dynawo.org",
+    "url_sourcecode": "https://github.com/dynawo/dynawo",
+    "url_docs": "http://dynawo.org/docs/"
+}
