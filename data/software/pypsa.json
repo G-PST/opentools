@@ -1,0 +1,20 @@
+{
+    "name": "PyPSA",
+    "categories": [
+        "capacity-expansion",
+        "production-cost"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "tu-berlin"
+    ],
+    "licenses": [
+        "mit"
+    ],
+    "description": "Open source toolbox for simulating and optimising modern power and energy systems",
+    "url_website": "https://pypsa.org/",
+    "url_sourcecode": "https://github.com/PyPSA/PyPSA",
+    "url_docs": "https://pypsa.org/"
+}
