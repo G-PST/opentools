@@ -1,0 +1,6 @@
+{
+    "name": "Modelica",
+    "url": "https://openmodelica.org/",
+    "licenses": [],
+    "description": "Modelica is an object oriented language to model cyber-physical systems. It supports acausal connection of reusable components governed by mathematical equations to facilitate modeling from first principles."
+}
