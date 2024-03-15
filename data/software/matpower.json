@@ -1,0 +1,21 @@
+{
+    "name": "MATPOWER",
+    "categories": [
+        "power-flow",
+        "production-cost"
+    ],
+    "languages": [
+        "octave",
+        "matlab"
+    ],
+    "organizations": [
+        "cornell"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "Free, open-source tools for electric power system simulation and optimization. Multiple formulations of AC and DC models for power flow, continuation power flow, optimal power flow, deterministic and stochastic unit commitment and more.",
+    "url_website": "https://matpower.org/",
+    "url_sourcecode": "https://matpower.org/doc/",
+    "url_docs": "https://github.com/MATPOWER/matpower"
+}
