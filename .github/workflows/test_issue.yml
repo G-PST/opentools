@@ -91,6 +91,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ steps.issue_branch.outputs.branch }}
           title: 'Automated Pull Request'
+          add-paths: |
+            data
           base: main
           body: 'This pull request was automatically created.'
 
