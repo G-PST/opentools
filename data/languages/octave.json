@@ -1,0 +1,8 @@
+{
+    "name": "Octave",
+    "url": "https://octave.org/",
+    "licenses": [
+        "gplv3"
+    ],
+    "description": "Octave is a scientific programming language with powerful mathematics-oriented syntax and built-in 2D/3D plotting and visualization tools"
+}
