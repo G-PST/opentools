@@ -28,8 +28,8 @@ jobs:
       - name: Build the input form
         uses: g-pst/opentools-form@gs/action-test
         with:
-          formpath: site/opentools-form
-          baseurl: /opentools-form # TODO: not supported yet
+          formpath: site/contribute
+          baseurl: /contribute
 
       - name: Package the site artifact
         uses: actions/upload-pages-artifact@v2

@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - run: |
           echo "Issue Number: ${{ github.event.issue.number }}"
@@ -27,10 +27,11 @@ jobs:
           echo "Issue labels: $LABELS"
           if echo "$LABELS" | grep -q "data success"; then
             echo "Issue has 'data success' label."
-            echo "::set-output name=has_error::false"
+            echo "has_error=false" >> $GITHUB_OUTPUT
           else
             echo "Issue does not have 'data success' label."
-            echo "::set-output name=has_error::true"
+            echo "has_error=true" >> $GITHUB_OUTPUT
+
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -50,7 +51,7 @@ jobs:
       - name: Provides error message
         if: steps.issue_branch.outputs.errormessage
         run: |
-          gh issue comment $ISSUE_NUMBER --body ${{steps.issue_branch.outputs.errormessage}}
+          gh issue comment $ISSUE_NUMBER --body '${{steps.issue_branch.outputs.errormessage}}'
           gh issue edit $ISSUE_NUMBER --add-label "data error"
           exit 1
         env:
@@ -61,8 +62,6 @@ jobs:
         id: test
         if: steps.issue_branch.outputs.branch
         uses: g-pst/opentools-builder@v3
-        with:
-          outputpath: ${{ env.GITHUB_OUTPUT }}
 
       - name: Provides error message back to the issue
         if: ${{ steps.issue_branch.outputs.branch && steps.test.outputs.status != 'pass' }}
@@ -84,7 +83,7 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
       
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v6
         id: pull_request
         if: ${{ steps.issue_branch.outputs.branch && steps.test.outputs.status == 'pass'}}
         with:

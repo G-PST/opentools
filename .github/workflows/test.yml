@@ -14,8 +14,6 @@ jobs:
       - name: Validate data and test generating the site
         id: test
         uses: g-pst/opentools-builder@v3
-        with:
-          outputpath: ${{ env.GITHUB_OUTPUT }}
 
       # Post a comment then use the shell command 'test' without arguments to
       # return a non-zero exit code. A bit hacky, but we need to keep the job
