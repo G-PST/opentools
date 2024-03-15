@@ -83,7 +83,7 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
       
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v3
         id: pull_request
         if: ${{ steps.issue_branch.outputs.branch && steps.test.outputs.status == 'pass'}}
         with:
