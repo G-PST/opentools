@@ -1,0 +1,19 @@
+{
+    "name": "gdm",
+    "categories": [
+        "distribution-hostingcapacity"
+    ],
+    "languages": [
+        "go-pro"
+    ],
+    "organizations": [
+        "dummy"
+    ],
+    "licenses": [
+        "kapil"
+    ],
+    "description": "New software",
+    "url_website": "kapil.com",
+    "url_sourcecode": "kapil.org",
+    "url_docs": "kapil.doc"
+}
