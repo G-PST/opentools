@@ -1,0 +1,17 @@
+{
+    "name": "PVWatts Calculator",
+    "categories": [],
+    "languages": [
+        "cpp"
+    ],
+    "organizations": [
+        "nrel"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "NREL's PVWatts\u00ae is a web application developed by the National Renewable Energy Laboratory (NREL) that estimates the electricity production of a grid-connected roof- or ground-mounted photovoltaic system based on a few simple inputs. To use the calculator, you provide information about the system's location, and basic design parameters. PVWatts\u00ae calculates estimates of the system's annual and monthly electricity production.  Important Note. PVWatts\u00ae is suitable for very preliminary studies of a photovoltaic system that uses modules (panels) with crystalline silicon or thin film photovoltaic cells. PVWatts\u00ae production estimates do not account for many factors that are important in the design of a photovoltaic system.",
+    "url_website": "https://pvwatts.nrel.gov/index.php",
+    "url_sourcecode": "https://github.com/NREL/ssc",
+    "url_docs": "https://pvwatts.nrel.gov/index.php"
+}
