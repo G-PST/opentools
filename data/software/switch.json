@@ -1,0 +1,19 @@
+{
+    "name": "Switch",
+    "categories": [
+        "capacity-expansion"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "edf"
+    ],
+    "licenses": [
+        "apache2"
+    ],
+    "description": "Switch is a capacity-planning model for power systems with large shares of renewable energy, storage and/or demand response. It optimizes investment decisions for renewable and conventional generation, battery or hydrogen storage, hydro and other assets, based on how they would be used during a collection of sample days in many future years. The use of multiple investment periods and chronologically sequenced hours enables optimization and assessment of a long-term renewable transition based on a direct consideration of how these resources would be used hour-by-hour. The Switch platform is highly modular, allowing easy selection between prewritten components or addition of custom components as first-class elements in the model.",
+    "url_website": "https://switch-model.org",
+    "url_sourcecode": "https://github.com/switch-model/switch",
+    "url_docs": "https://switch-model.org/"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "ExoGO",
+    "categories": [],
+    "languages": [
+        "cpp",
+        "python"
+    ],
+    "organizations": [
+        "pnnl"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "ExaGO provides applications to solve stochastic, security-constrained, and multiperiod ACOPF problems on high-performance with CPUs and GPUs.",
+    "url_website": "https://gitlab.pnnl.gov/exasgd/frameworks/exago",
+    "url_sourcecode": "https://gitlab.pnnl.gov/exasgd/frameworks/exago",
+    "url_docs": "https://gitlab.pnnl.gov/exasgd/frameworks/exago/-/blob/master/docs/manual/manual.pdf"
+}

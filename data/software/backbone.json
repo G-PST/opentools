@@ -1,0 +1,21 @@
+{
+    "name": "Backbone",
+    "categories": [
+        "capacity-expansion",
+        "production-cost"
+    ],
+    "languages": [
+        "gams"
+    ],
+    "organizations": [
+        "vtt",
+        "ucd"
+    ],
+    "licenses": [
+        "lgplv3-orlater"
+    ],
+    "description": "Backbone represents a highly adaptable energy systems modelling framework, which can be utilized to create models for studying the design and operation of energy systems. The model can be solved as an investment model (single or multi-period, myopic, or full foresight) or as a rolling production cost\u202f/\u202funit commitment model to simulate operations. It includes a wide range of features and constraints, such as stochastic parameters, multiple reserve products, unit start-ups (also with trajectories), energy storage units, controlled and uncontrolled energy transfers, DC power flow and can be used to represent any energy sector at a discretionary level of detail. It allows the modeler to change the temporal resolution of the model between time steps. \u2014 and this enables, for example, to use a coarser time resolution further ahead in the time horizon of the model.",
+    "url_website": "https://gitlab.vtt.fi/backbone/backbone",
+    "url_sourcecode": "https://gitlab.vtt.fi/backbone/backbone/-/tree/master",
+    "url_docs": "https://gitlab.vtt.fi/backbone/backbone/-/wikis/home"
+}

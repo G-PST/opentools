@@ -1,0 +1,17 @@
+{
+    "name": "PowerSystems.jl",
+    "categories": [],
+    "languages": [
+        "julia"
+    ],
+    "organizations": [
+        "nrel"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "PowerSystems.jl is a package to organize and manipulate data for the study of energy systems with diverse modeling requirements. This software serves two main purposes: to reduce the burden of large power system data set development, and to promote reproducible research and simulation. PowerSystems.jl implements an abstract hierarchy to represent and customize power systems data and includes data containers for quasi-static and dynamic simulation applications.",
+    "url_website": "https://www.nrel.gov/analysis/siip.html",
+    "url_sourcecode": "https://github.com/NREL-SIIP/PowerSystems.jl",
+    "url_docs": "https://nrel-siip.github.io/PowerSystems.jl/stable/"
+}
