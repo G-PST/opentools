@@ -1,0 +1,17 @@
+{
+    "name": "System Advisor Model",
+    "categories": [],
+    "languages": [
+        "cpp"
+    ],
+    "organizations": [
+        "nrel"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "The National Renewable Energy Laboratory's System Advisor Model (SAM) is a free techno-economic software model that facilitates decision-making for people in the renewable energy industry. SAM\u2019s performance models are for photovoltaic systems with optional battery storage, concentrating solar power, industrial process heat, solar water heating, wind, marine energy, geothermal, biomass, and conventional power systems that either deliver electricity directly to the power grid, or interact with the electric load of a grid-connected building or facility.  The financial models are for behind-the-meter projects that buy and sell electricity at retail rates (residential and commercial), or front-of-meter projects that sell electricity at a price determined in a power purchase agreement (PPA) or at market prices. SAM also has financial models for third-party ownership and community solar financial structures.  SAM can model large or small projects, ranging from residential rooftop photovoltaic installations to large concentrating solar power generation projects and wind farms.  The SAM Software Development Kit (SDK) provides tools for integrating SAM into software projects developed in a variety of languages. It includes the Python package PySAM.  SAM is an open source project, so its source code is available to the public. Researchers can study the code to understand the model algorithms, and software programmers can contribute their own models and enhancements to the project. Reference manuals describing the model algorithms are also available for download from the SAM website.",
+    "url_website": "https://sam.nrel.gov",
+    "url_sourcecode": "https://github.com/nrel/sam",
+    "url_docs": "https://sam.nrel.gov"
+}

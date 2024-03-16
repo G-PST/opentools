@@ -1,0 +1,19 @@
+{
+    "name": "PowSyBl",
+    "categories": [],
+    "languages": [
+        "cpp",
+        "java",
+        "python"
+    ],
+    "organizations": [
+        "lfenergy"
+    ],
+    "licenses": [
+        "mpl-2"
+    ],
+    "description": "An open source set of power system blocks dedicated to grid analysis and simulation. The power system blocks may be used through scripts for a quick shot, but also be assembled to build state of the art applications. Powsybl is part of the LF Energy Foundation. One major aim of the project is to make it easy to write complex software for power system simulation and analysis.",
+    "url_website": "https://www.powsybl.org/",
+    "url_sourcecode": "https://github.com/powsybl",
+    "url_docs": "https://www.powsybl.org/"
+}
