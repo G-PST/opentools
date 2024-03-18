@@ -1,0 +1,20 @@
+{
+    "name": "pandapower",
+    "categories": [
+        "power-flow"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "fraunhofer-iee",
+        "uni-kassel-e2n"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "An easy to use open source tool for power system modeling, analysis and optimization with a high degree of automation. ",
+    "url_website": "www.pandapower.org",
+    "url_sourcecode": "https://github.com/e2nIEE/pandapower",
+    "url_docs": "https://pandapower.readthedocs.io"
+}
