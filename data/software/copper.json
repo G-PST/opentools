@@ -1,0 +1,19 @@
+{
+    "name": "COPPER",
+    "categories": [
+        "capacity-expansion"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "uvic"
+    ],
+    "licenses": [
+        "mit"
+    ],
+    "description": "COPPER is a multi-period, optimization-based capacity expansion model specifically designed for the Canadian context. It analyzes Canada\u2019s electricity system transition under various carbon management policies.",
+    "url_website": "https://cme-emh.ca/inventory-model/copper/?lang=en",
+    "url_sourcecode": "https://gitlab.com/sesit/copper",
+    "url_docs": "https://gitlab.com/sesit/copper"
+}
