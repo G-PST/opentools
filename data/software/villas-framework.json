@@ -1,0 +1,19 @@
+{
+    "name": "VILLASframework ",
+    "categories": [],
+    "languages": [
+        "cpp",
+        "javascript",
+        "python"
+    ],
+    "organizations": [
+        "rwth-aachen"
+    ],
+    "licenses": [
+        "gplv3"
+    ],
+    "description": "VILLAS is framework for coupling test beds and real-time simulators between geographically distributed laboratories. The development of VILLAS is mainly driven by RWTH Aachen University and was originally designed here for geographically distributed real-time simulation of electrical networks, but can also be used without restrictions for simulation in other domains as well as multi-physical systems.",
+    "url_website": "https://www.fein-aachen.org/en/projects/villas-framework/",
+    "url_sourcecode": "https://github.com/VILLASframework",
+    "url_docs": "https://villas.fein-aachen.org/doc"
+}

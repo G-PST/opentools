@@ -1,0 +1,19 @@
+{
+    "name": "ModPowerSystems",
+    "categories": [
+        "dynamics-emt"
+    ],
+    "languages": [
+        "modelica"
+    ],
+    "organizations": [
+        "rwth-aachen"
+    ],
+    "licenses": [
+        "modelica2"
+    ],
+    "description": "ModPowerSystems is a Modelica package which includes power systems models developed using static phasors, dynamic phasors as well as electromagnetic transient variables.",
+    "url_website": "https://www.fein-aachen.org/en/projects/modpowersystems/",
+    "url_sourcecode": "https://github.com/ModPowerSystems/ModPowerSystems",
+    "url_docs": ""
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Simplus Grid Tool",
+    "categories": [
+        "dynamics",
+        "dynamics-emt"
+    ],
+    "languages": [
+        "matlab"
+    ],
+    "organizations": [
+        "imperial"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "Simplus Grid Tool (SimplusGT in short) is an open-source tool for dynamic analysis and time-domain simulation of power systems (large-scale, multi-apparatus, generator-converter-composite, AC or DC or hybrid AC-DC). The tool is based on Matlab/Simulink.",
+    "url_website": "https://github.com/Future-Power-Networks/Simplus-Grid-Tool",
+    "url_sourcecode": "https://github.com/Future-Power-Networks/Simplus-Grid-Tool",
+    "url_docs": "https://github.com/Future-Power-Networks/Simplus-Grid-Tool/tree/master/Documentations"
+}

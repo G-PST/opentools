@@ -1,0 +1,20 @@
+{
+    "name": "DPSim",
+    "categories": [
+        "dynamics",
+        "power-flow"
+    ],
+    "languages": [
+        "cpp"
+    ],
+    "organizations": [
+        "rwth-aachen"
+    ],
+    "licenses": [
+        "mpl-2"
+    ],
+    "description": "DPsim is a real-time capable power system simulator that supports dynamic phasor and electromagnetic transient simulation as well as continuous power flow. It primarily targets large-scale scenarios on commercial off-the-sheld hardware that require deterministic time steps in the range of micro- to milliseconds.",
+    "url_website": "https://www.fein-aachen.org/en/projects/dpsim/",
+    "url_sourcecode": "https://github.com/sogno-platform/dpsim",
+    "url_docs": "https://dpsim.fein-aachen.org/docs/"
+}

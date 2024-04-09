@@ -1,0 +1,17 @@
+{
+    "name": "eGo Framework",
+    "categories": [],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "reiner-lemoine"
+    ],
+    "licenses": [
+        "agplv3"
+    ],
+    "description": "The python package eGo is a toolbox and also an application which combines eTraGo - a tool for optimizing flexibility options for transmission grids based on PyPSA and eDisGo - a toolbox in itself capable of analyzing distribution grids for grid issues and evaluating measures responding these.",
+    "url_website": "https://openegoproject.wordpress.com/",
+    "url_sourcecode": "https://github.com/openego",
+    "url_docs": "https://openego.readthedocs.io/en/dev/welcome.html"
+}

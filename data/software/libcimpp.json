@@ -1,0 +1,17 @@
+{
+    "name": "CIM++",
+    "categories": [],
+    "languages": [
+        "cpp"
+    ],
+    "organizations": [
+        "rwth-aachen"
+    ],
+    "licenses": [
+        "mpl-2"
+    ],
+    "description": "CIM++ is a software project around a deserialiser library (libcimpp) for C++ objects from XML/RDF documents based on the Common Information Model (CIM) standards (i.e. IEC61970/61968/62325) for the energy sector.",
+    "url_website": "https://www.fein-aachen.org/en/projects/cimpp/",
+    "url_sourcecode": "https://github.com/sogno-platform/libcimpp",
+    "url_docs": "https://github.com/sogno-platform/libcimpp"
+}
