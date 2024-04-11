@@ -90,6 +90,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ steps.issue_branch.outputs.branch }}
           title: ${{ github.event.issue.title }}
+          commit-message: ${{ github.event.issue.title }}
           add-paths: |
             data
           base: main
