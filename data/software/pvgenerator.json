@@ -1,0 +1,19 @@
+{
+    "name": "PV generator",
+    "categories": [
+        "devices"
+    ],
+    "languages": [
+        "matlab"
+    ],
+    "organizations": [
+        "rwth-aachen"
+    ],
+    "licenses": [
+        "gplv3"
+    ],
+    "description": "Matlab code to generate realistic PV power injection profiles for 1 day",
+    "url_website": "https://www.fein-aachen.org/en/projects/PVgenerator/",
+    "url_sourcecode": "https://git.rwth-aachen.de/acs/public/simulation/pvgenerator",
+    "url_docs": "https://git.rwth-aachen.de/acs/public/simulation/pvgenerator/-/blob/master/README.md"
+}
