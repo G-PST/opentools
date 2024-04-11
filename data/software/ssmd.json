@@ -1,0 +1,19 @@
+{
+    "name": "SSMD",
+    "categories": [
+        "distribution"
+    ],
+    "languages": [
+        "matlab"
+    ],
+    "organizations": [
+        "rwth-aachen"
+    ],
+    "licenses": [
+        "gplv3"
+    ],
+    "description": "Matlab code to generate the state-space A and B matrices of electrical distribution grids, including inverter, loads and lines components. The slack bus can be selected depending on the type of grid (conventional- or micro-grid). The matrices can also be used to run any time simulation, with user-defined inputs and disturbances and selecting simulation time stamp and duration.",
+    "url_website": "https://www.fein-aachen.org/en/projects/ssmd/",
+    "url_sourcecode": "https://git.rwth-aachen.de/acs/public/simulation/ssmd",
+    "url_docs": "https://git.rwth-aachen.de/acs/public/simulation/ssmd/-/blob/master/README.md"
+}
