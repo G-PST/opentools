@@ -1,0 +1,20 @@
+{
+    "name": "DistAIX",
+    "categories": [
+        "distribution"
+    ],
+    "languages": [
+        "python",
+        "cpp"
+    ],
+    "organizations": [
+        "rwth-aachen"
+    ],
+    "licenses": [
+        "gplv3"
+    ],
+    "description": "DistAIX (Distributed Agent-based SImulation of CompleX Power Systems) is a simulator for cyber-physical power distribution systems that makes use of high performance computing techniques to scale up the simulation. An agent-based modeling and simulation approach is applied to model the behavior of the electrical system as well as distributed control and decision-making processes. Communication between participants of the system (agents) is also modeled and simulated.",
+    "url_website": "https://www.fein-aachen.org/en/projects/distaix/",
+    "url_sourcecode": "https://git.rwth-aachen.de/acs/public/simulation/DistAIXFramework/distaixweb.git",
+    "url_docs": "https://git.rwth-aachen.de/acs/public/simulation/DistAIXFramework/distaixweb/-/blob/master/README.md"
+}
