@@ -1,0 +1,26 @@
+{
+    "name": "HELICS",
+    "categories": [
+        "cosimulation"
+    ],
+    "languages": [
+        "cpp",
+        "python",
+        "julia",
+        "matlab",
+        "octave",
+        "java"
+    ],
+    "organizations": [
+        "nrel",
+        "pnnl",
+        "llnl"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "exible and scalable open-source co-simulation framework is designed to integrate simulators designed for separate energy system domains--such as transmission, distribution, communications, natural gas, buildings, transportation, natural gas, water, control schemes, etc. Together these simulations can co-simulate a wide range of grid-related applications ranging in spatial scale from a single controller managing an electric vehicle charging station up to regional and interconnection-scale power system behaviors at unprecedented levels of detail and speed. For example, HELICS can link multi-faceted large-scale (20,000+ node) bulk power simulations (markets, powerflow, dynamics) with thousands of distribution simulations (each with thousands of nodes), in combination with hundreds of thousands of controllers, communication simulation with hundreds of thousands of communication points, and more.  This comprehensive multi-energy simulation tool is fundamental for investment decision-making by industry. It's also important to help quantify the impact of the ever-increasing high penetration variable generation, DERs, control schemes, and other changes on the power grid reliability and resiliency; and to simulate possible solutions at scale in silico.",
+    "url_website": "https://helics.org/",
+    "url_sourcecode": "https://github.com/GMLC-TDC/HELICS",
+    "url_docs": "https://docs.helics.org/en/latest/user-guide/index.html"
+}

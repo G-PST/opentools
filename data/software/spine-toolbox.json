@@ -1,0 +1,23 @@
+{
+    "name": "Spine Toolbox",
+    "categories": [
+        "data-structures"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "vtt",
+        "kth",
+        "energyreform",
+        "ucd",
+        "ku-leuven"
+    ],
+    "licenses": [
+        "lgplv3-orlater"
+    ],
+    "description": "Spine Toolbox is an integrated platform for data acquisition and data processing with advanced functionalities for enabling the chaining of tools and models into complex shareable workflows. The software helps users to import and manage data, define models and scenarios and orchestrate projects. It facilitates the linking of models with different scopes, or spatio-temporal resolutions, through the user interface.",
+    "url_website": "http://www.spine-model.org/",
+    "url_sourcecode": "https://github.com/spine-tools/Spine-Toolbox",
+    "url_docs": "https://spine-toolbox.readthedocs.io/en/latest/?badge=latest"
+}
