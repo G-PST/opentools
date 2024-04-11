@@ -1,6 +1,8 @@
 {
     "name": "System Advisor Model",
-    "categories": [],
+    "categories": [
+        "devices"
+    ],
     "languages": [
         "cpp"
     ],

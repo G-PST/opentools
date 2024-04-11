@@ -1,6 +1,8 @@
 {
     "name": "PVWatts Calculator",
-    "categories": [],
+    "categories": [
+        "devices"
+    ],
     "languages": [
         "cpp"
     ],

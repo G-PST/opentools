@@ -1,6 +1,8 @@
 {
     "name": "VILLASframework ",
-    "categories": [],
+    "categories": [
+        "cosimulation"
+    ],
     "languages": [
         "cpp",
         "javascript",

@@ -1,6 +1,8 @@
 {
     "name": "IDEA",
-    "categories": [],
+    "categories": [
+        "visualization"
+    ],
     "languages": [
         "python"
     ],
