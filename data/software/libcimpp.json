@@ -1,6 +1,8 @@
 {
     "name": "CIM++",
-    "categories": [],
+    "categories": [
+        "data-structures"
+    ],
     "languages": [
         "cpp"
     ],

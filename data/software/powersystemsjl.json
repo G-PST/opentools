@@ -1,6 +1,8 @@
 {
     "name": "PowerSystems.jl",
-    "categories": [],
+    "categories": [
+        "data-structures"
+    ],
     "languages": [
         "julia"
     ],

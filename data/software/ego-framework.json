@@ -1,6 +1,8 @@
 {
     "name": "eGo Framework",
-    "categories": [],
+    "categories": [
+        "distribution"
+    ],
     "languages": [
         "python"
     ],
