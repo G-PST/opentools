@@ -1,0 +1,17 @@
+{
+    "name": "IDEA",
+    "categories": [],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "uvic"
+    ],
+    "licenses": [
+        "mit"
+    ],
+    "description": "IDEA is a powerful open-source visualization dashboard and explorer, tailored for energy modeling inputs and outputs. IDEA is a versatile platform catering to both modelers and analysts. Modelers leverage IDEA during model development to scrutinize inputs and outputs, ensuring the model aligns with intended objectives. Once results are generated, IDEA enables users to delve deep into their data, explore research questions, and derive actionable insights. Whether used independently from its GitLab repository (https://gitlab.com/sesit/idea) or integrated into the M3 platform (https://gitlab.com/sesit/m3-spine), IDEA seamlessly launches after a model finishes running, providing a cohesive modeling experience. IDEA currently supports custom dashboards and plots for various model outputs, including COPPER (Emissions, Capacity, New Capacity, Net New Capacity, Supply, Transmission Flow, Capacity, Dispatch) and SILVER (OPF Costs, OPF Results, Price OPF, UC Results). Over time, the platform will be continually expanded to accommodate a wider array of models and outputs",
+    "url_website": "https://gitlab.com/sesit/idea",
+    "url_sourcecode": "https://gitlab.com/sesit/idea",
+    "url_docs": "https://gitlab.com/sesit/idea"
+}

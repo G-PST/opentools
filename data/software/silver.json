@@ -1,0 +1,19 @@
+{
+    "name": "SILVER",
+    "categories": [
+        "production-cost"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "uvic"
+    ],
+    "licenses": [
+        "mit"
+    ],
+    "description": "SILVER (Strategic Integration of Large-capacity Variable Energy Resources) is a scenario-based electricity system model that explores the trade-offs among alternative balancing strategies for high variable renewable energy (VRE) electricity grids. SILVER optimizes the asset dispatch for a user-defined electricity system configuration that specifies demand response availability, generation assets, storage assets, and transmission infrastructure",
+    "url_website": "https://cme-emh.ca/inventory-model/silver/?lang=en",
+    "url_sourcecode": "https://gitlab.com/sesit/silver",
+    "url_docs": "https://gitlab.com/sesit/silver"
+}
