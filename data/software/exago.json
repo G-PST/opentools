@@ -1,6 +1,8 @@
 {
-    "name": "ExoGO",
-    "categories": [],
+    "name": "ExaGO",
+    "categories": [
+        "power-flow"
+    ],
     "languages": [
         "cpp",
         "python"
