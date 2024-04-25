@@ -1,0 +1,19 @@
+{
+    "name": "Inertia Monitor",
+    "categories": [
+        "realtime-monitoring"
+    ],
+    "languages": [
+        "go"
+    ],
+    "organizations": [
+        "nrel"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "inertia is a Go package for real-time estimation of a power system's inertia levels. It defines software interfaces for ingesting and reporting data in real-time. System integrators can provide deployment-specfic data ingestion code (e.g., developed for use with a specific EMS or historian system) that conforms to the stated data interfaces for the desired estimation method. Once these input interfaces are implemented, ingested data can be automatically processed and reported out via the package's DataSink framework.",
+    "url_website": "",
+    "url_sourcecode": "https://github.com/G-PST/inertia",
+    "url_docs": "https://g-pst.github.io/inertia/pkg/github.com/G-PST/inertia/"
+}
