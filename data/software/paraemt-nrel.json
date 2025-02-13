@@ -1,0 +1,19 @@
+{
+    "name": "ParaEMT",
+    "categories": [
+        "dynamics-emt"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "nrel"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "ParaEMT is a power system electromagnetic transients (EMT) simulator, that has been developed (at NREL) for providing a powerful and flexible platform for simulating EMT of large-scale inverter-based resource (IBR)-dominated power systems leveraging parallel computing. ParaEMT has been fully open source since June 2023 at GitHub, to foster a community of EMT simulation and assist in exploring new EMT algorithms and applying advanced computational techniques to EMT simulation.",
+    "url_website": "https://github.com/NREL/ParaEMT_public",
+    "url_sourcecode": "https://github.com/NREL/ParaEMT_public",
+    "url_docs": ""
+}
