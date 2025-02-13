@@ -1,6 +1,7 @@
 {
     "name": "ParaEMT",
     "categories": [
+        "dynamics",
         "dynamics-emt"
     ],
     "languages": [
