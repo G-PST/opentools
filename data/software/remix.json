@@ -1,0 +1,21 @@
+{
+    "name": "REMix",
+    "categories": [
+        "capacity-expansion",
+        "production-cost"
+    ],
+    "languages": [
+        "gams",
+        "python"
+    ],
+    "organizations": [
+        "DLR"
+    ],
+    "licenses": [
+        "bsd-3-clause"
+    ],
+    "description": "REMix is a powerful software for energy systems optimization. It can be used for the planning and techno-economical assessment of future multi-energy systems of any spatial, temporal and technological scope. REMix offers a wide range of methods and features that can be flexibly selected by the user.",
+    "url_website": "https://helmholtz.software/software/remix",
+    "url_sourcecode": "https://gitlab.com/dlr-ve/esy/remix",
+    "url_docs": "https://dlr-ve.gitlab.io/esy/remix/framework/"
+}
