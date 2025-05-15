@@ -1,0 +1,19 @@
+{
+    "name": "Calliope",
+    "categories": [
+        "capacity-expansion"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "tu-delft"
+    ],
+    "licenses": [
+        "apache2"
+    ],
+    "description": "Energy system modelling framework",
+    "url_website": "https://callio.pe",
+    "url_sourcecode": "https://github.com/calliope-project/calliope/",
+    "url_docs": "https://calliope.readthedocs.io"
+}
