@@ -1,0 +1,19 @@
+{
+    "name": "OpenSynth",
+    "categories": [
+        "load-modelling"
+    ],
+    "languages": [
+        "python"
+    ],
+    "organizations": [
+        "lfenergy"
+    ],
+    "licenses": [
+        "apache2"
+    ],
+    "description": "OpenSynth is a global open community designed to democratize synthetic data, to accelerate the decarbonization of global energy systems.",
+    "url_website": "https://lfenergy.org/projects/opensynth/",
+    "url_sourcecode": "https://github.com/OpenSynth-energy/OpenSynth",
+    "url_docs": ""
+}
