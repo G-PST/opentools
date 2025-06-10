@@ -1,7 +1,8 @@
 {
     "name": "Calliope",
     "categories": [
-        "capacity-expansion"
+        "capacity-expansion",
+        "production-cost"
     ],
     "languages": [
         "python"
