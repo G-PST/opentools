@@ -1,0 +1,11 @@
+{
+    "name": "Sienna",
+    "description": "Sienna is a framework for power system modeling and simulation written in Julia",
+    "categories": ["production-cost", "power-flow", "dynamics", "dynamics-emt", "dynamics-rms", "data-structures", "capacity-expansion"],
+    "organizations": ["nrel"],
+    "languages": ["julia"],
+    "licenses": ["bsd-3-clause"],
+    "url_website": "https://nrel-sienna.github.io/Sienna/",
+    "url_sourcecode": "https://github.com/Sienna",
+    "url_docs": "https://nrel-sienna.github.io/Sienna/SiennaDocs/docs/build/index.html"
+}
