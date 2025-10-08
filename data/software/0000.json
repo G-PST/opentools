@@ -1,0 +1,21 @@
+{
+    "name": "OSeMOSYS",
+    "categories": [
+        "capacity-expansion",
+        "production-cost"
+    ],
+    "languages": [
+        "python",
+        "gams"
+    ],
+    "organizations": [
+        "imperial"
+    ],
+    "licenses": [
+        "apache2"
+    ],
+    "description": "OSeMOSYS is a full-fledged systems optimization model for long-term energy planning and integrated assessment. ",
+    "url_website": "https://osemosys.github.io/",
+    "url_sourcecode": "https://github.com/OSeMOSYS",
+    "url_docs": "https://muio-modelling-user-interface-for-osemosys.readthedocs.io/en/latest/"
+}
